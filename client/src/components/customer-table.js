@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Customer = () => {
+const CustomerTable = () => {
     const customers = [
         {
             id: "C001",
@@ -97,7 +97,7 @@ const Customer = () => {
 
     return (
         <div>
-            <h2>고객 정보</h2>
+            <h2>고객 정보 테이블 base</h2>
             <div className="customer-row">
                 {customers.map((customer) => (
                     <div className="customer-container" key={customer.id}>
@@ -117,4 +117,4 @@ const Customer = () => {
     );
 };
 
-export default Customer;
+export default CustomerTable;
